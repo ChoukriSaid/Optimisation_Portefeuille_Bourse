@@ -18,6 +18,13 @@ Simuler des portefeuilles aléatoires et tracer la frontière efficiente pour op
 ## Analyse 
 (regardez main.py pour plus de détails sur le code) 
 
+
 Pour ce projet, j'ai utilisé l'API yfinance pour télécharger les données de quatre entreprises populaires en Inde (RELIANCE, TCS, INFY, HDFCBANK)
 
+![Capture d’écran 2024-09-06 235233](https://github.com/user-attachments/assets/3eeb48ad-16ab-47aa-8fae-897cf7be5b5c)
+
+
+Le graphique affiche les prix ajustés de clôture de quatre actions (HDFCBANK.NS, INFY.NS, RELIANCE.NS, TCS.NS) au fil du temps, de septembre 2023 à septembre 2024. Il met en évidence que TCS a les prix ajustés de clôture les plus élevés, suivie de RELIANCE, INFY (Infosys) et HDFCBANK. Les prix de RELIANCE et TCS montrent des tendances haussières marquées, ce qui indique une forte performance, tandis que HDFCBANK et INFY présentent une plus grande stabilité avec des fluctuations de prix relativement faibles.
+
+Passons maintenant au calcul des moyennes mobiles sur 50 jours et 200 jours et à leur tracé en parallèle avec le prix ajusté de clôture pour chaque action :
 
