@@ -10,6 +10,7 @@ matplotlib et seaborn 📊
 L'objectif est d'appliquer la théorie moderne du portefeuille afin de construire un portefeuille boursier efficace. Les tâches incluent :
 
 Collecter des données boursières 📉
+
 Visualiser les performances des actions au fil du temps 📆
 Calculer les moyennes mobiles et analyser les tendances 📊
 Simuler des portefeuilles aléatoires et tracer la frontière efficiente pour optimiser le portefeuille 🎯
