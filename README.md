@@ -8,7 +8,6 @@ pandas 🐼
 matplotlib et seaborn 📊
   # 🚀 Objectifs du Projet
 L'objectif est d'appliquer la théorie moderne du portefeuille afin de construire un portefeuille boursier efficace. Les tâches incluent :
-
 Collecter des données boursières 📉
 
 Visualiser les performances des actions au fil du temps 📆
