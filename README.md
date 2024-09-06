@@ -1,2 +1,1 @@
-# Optimisation_Portefeuille_Bourse
-Optimisation de Portefeuille en Bourse avec Python
+📊 Optimisation de Portefeuille Boursier avec Python 🐍
