@@ -3,8 +3,11 @@ Bienvenue dans ce projet d'optimisation de portefeuille boursier en utilisant Py
 
 # 🔧 Technologies Utilisées
 Python 🐍
+
 yfinance 📈
+
 pandas 🐼
+
 matplotlib et seaborn 📊
 # 🚀 Objectifs du Projet
 L'objectif est d'appliquer la théorie moderne du portefeuille afin de construire un portefeuille boursier efficace. Les tâches incluent :
