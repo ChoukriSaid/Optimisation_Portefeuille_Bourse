@@ -17,6 +17,7 @@ Calculer les moyennes mobiles et analyser les tendances 📊
 Simuler des portefeuilles aléatoires et tracer la frontière efficiente pour optimiser le portefeuille 🎯
 ## Analyse 
 (regardez main.py pour plus de détails sur le code) 
+
 Pour ce projet, j'ai utilisé l'API yfinance pour télécharger les données de quatre entreprises populaires en Inde (RELIANCE, TCS, INFY, HDFCBANK)
 
 
