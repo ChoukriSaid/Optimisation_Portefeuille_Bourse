@@ -1,5 +1,5 @@
 ## 📊 Optimisation de Portefeuille Boursier avec Python 🐍
-Bienvenue dans ce projet d'optimisation de portefeuille boursier en utilisant Python. Ce projet a pour but de vous guider dans la création d'un portefeuille d'actions optimisé en maximisant les rendements tout en minimisant les risques. Nous utilisons ici l'API yfinance pour récupérer des données boursières et la théorie moderne du portefeuille (MPT) pour construire un portefeuille optimal.
+Bienvenue dans ce projet d'optimisation de portefeuille boursier en utilisant Python. Ce projet a pour but de créer un portefeuille d'actions optimisé en maximisant les rendements tout en minimisant les risques. J'utilise ici l'API yfinance pour récupérer des données boursières et la théorie moderne du portefeuille (MPT) pour construire un portefeuille optimal.
 
 # 🔧 Technologies Utilisées
 Python 🐍
@@ -18,7 +18,7 @@ Visualiser les performances des actions au fil du temps 📆
 Calculer les moyennes mobiles et analyser les tendances 📊 
 
 Simuler des portefeuilles aléatoires et tracer la frontière efficiente pour optimiser le portefeuille 🎯
-## Analyse 
+## Analyse et discussions
 (regardez main.py pour plus de détails sur le code) 
 
 
@@ -67,10 +67,13 @@ INFY et TCS ont une forte corrélation positive (0,71), ce qui indique qu'elles 
 ## Optimisation de Portefeuille
 En utilisant la Théorie Moderne du Portefeuille, nous pouvons construire un portefeuille efficace en équilibrant le risque et le rendement. Voici les étapes :
 
-Calculer les rendements attendus et la volatilité pour chaque action.
-Générer une série de portefeuilles aléatoires pour identifier la frontière efficiente.
-Optimiser le portefeuille pour maximiser le ratio de Sharpe, une mesure du rendement ajusté au risque.
-Commençons par calculer les rendements attendus et la volatilité pour chaque action :
+  *Calculer les rendements attendus et la volatilité pour chaque action.
+
+  *Générer une série de portefeuilles aléatoires pour identifier la frontière efficiente.
+
+  *Optimiser le portefeuille pour maximiser le ratio de Sharpe, une mesure du rendement ajusté au risque.
+
+  *Commençons par calculer les rendements attendus et la volatilité pour chaque action :
 
 ![Capture d’écran 2024-09-07 145556](https://github.com/user-attachments/assets/0f096baa-f841-46fe-a196-e700f9e89872)
 
@@ -78,9 +81,12 @@ RELIANCE a le rendement attendu le plus élevé (29,73 %) et une volatilité mod
 
 Ensuite, nous allons :
 
-Générer un grand nombre de pondérations de portefeuilles aléatoires.
-Calculer le rendement attendu et la volatilité pour chaque portefeuille.
-Tracer ces portefeuilles pour visualiser la frontière efficiente.
+  *Générer un grand nombre de pondérations de portefeuilles aléatoires.
+
+  *Calculer le rendement attendu et la volatilité pour chaque portefeuille.
+
+  *Tracer ces portefeuilles pour visualiser la frontière efficiente.
+
 Commençons par générer les portefeuilles aléatoires et tracer la frontière efficiente :
 
 ![Capture d’écran 2024-09-07 145654](https://github.com/user-attachments/assets/dc2b7e2f-bbc9-4374-9156-bf174242abe4)
@@ -93,18 +99,24 @@ Voici comment identifier le portefeuille avec le ratio de Sharpe maximal :
 
 Le portefeuille avec le ratio de Sharpe maximal présente les caractéristiques suivantes :
 
-  Rendement attendu : ~26,08 %
-  Volatilité : ~15,54 %
-  Ratio de Sharpe : ~1,68
+  Rendement attendu : ~29,57 %
+  
+  Volatilité : ~16,27 %
+  
+  Ratio de Sharpe : ~1,81
+  
 Passons maintenant à l'identification des pondérations des actions dans le portefeuille qui génèrent le ratio de Sharpe maximal :
 
 ![Capture d’écran 2024-09-07 145858](https://github.com/user-attachments/assets/83c25ea5-b991-4187-b421-4d03b02412e0)
 
 Le résultat montre un portefeuille diversifié avec les allocations suivantes :
 
-  HDFCBANK : 30,85 %
-  INFY : 10,59 %
-  RELIANCE : 18,02 %
+  HDFCBANK : 49.40 %
+  
+  INFY : 10.61 %
+  
+  RELIANCE : 39.97 %
+  
   TCS : 40,53 %
 TCS a l'allocation la plus élevée, ce qui indique sa contribution significative à la performance du portefeuille, tandis qu'INFY a l'allocation la plus faible. Cette allocation équilibrée vise à maximiser les rendements tout en minimisant le risque, en tirant parti des performances individuelles des actions et de leurs corrélations.
 
