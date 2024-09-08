@@ -11,6 +11,7 @@ pandas 🐼
 matplotlib et seaborn 📊
 # 🚀 Objectifs du Projet
 L'objectif est d'appliquer la théorie moderne du portefeuille afin de construire un portefeuille boursier efficace. Les tâches incluent :
+
 Collecter des données boursières 📉
 
 Visualiser les performances des actions au fil du temps 📆
@@ -62,7 +63,7 @@ Les distributions sont approximativement normales, centrées autour de zéro, ce
 Voyons maintenant s'il existe une corrélation entre ces actions :
 ![Capture d’écran 2024-09-07 145439](https://github.com/user-attachments/assets/5eb5837a-c0ef-465d-bab9-a3092d4aff8a)
 
-INFY et TCS ont une forte corrélation positive (0,71), ce qui indique qu'elles ont tendance à évoluer dans la même direction. HDFCBANK a une corrélation positive modérée avec RELIANCE (0,37) et une faible corrélation avec INFY (0,17) et TCS (0,10). RELIANCE présente une faible corrélation avec INFY (0,19) et TCS (0,13). Ces corrélations variables suggèrent des avantages potentiels en termes de diversification ; combiner des actions avec de faibles corrélations peut réduire le risque global du portefeuille.
+INFY et TCS ont une forte corrélation positive (0,71), ce qui indique qu'elles ont tendance à évoluer dans la même direction. HDFCBANK a une corrélation positive modérée avec RELIANCE (0,32) et une faible corrélation avec INFY (0,17) et TCS (0,10). RELIANCE présente une faible corrélation avec INFY (0,19) et TCS (0,08). Ces corrélations variables suggèrent des avantages potentiels en termes de diversification ; combiner des actions avec de faibles corrélations peut réduire le risque global du portefeuille.
 
 ## Optimisation de Portefeuille
 En utilisant la Théorie Moderne du Portefeuille, nous pouvons construire un portefeuille efficace en équilibrant le risque et le rendement. Voici les étapes :
@@ -79,7 +80,7 @@ En utilisant la Théorie Moderne du Portefeuille, nous pouvons construire un por
 
 
 
-INFY a le rendement attendu le plus élevé (31.76 %) et une volatilité modérée (22.28 %), ce qui indique un investissement potentiellement très rémunérateur avec un risque relativement élevé. RELIANCE et TCS ont également des rendements attendus élevés (respectivement 20.30 % et 29.74 %) avec une volatilité modérée (21.46 % et 20.77 %). HDFCBANK affiche le rendement attendu le plus faible (4.11 %) et une volatilité modérée (21,69 %), ce qui en fait l'option la moins attractive en termes de rendement ajusté au risque.
+INFY a le rendement le plus élevé (31.76 %) et une volatilité modérée (22.28 %), ce qui indique un investissement potentiellement très rémunérateur avec un risque relativement élevé. RELIANCE et TCS ont également des rendements attendus élevés (respectivement 20.30 % et 29.74 %) avec une volatilité modérée (21.46 % et 20.77 %). HDFCBANK affiche le rendement attendu le plus faible (4.11 %) et une volatilité modérée (21,69 %), ce qui en fait l'option la moins attractive en termes de rendement ajusté au risque.
 
 Ensuite, nous allons :
 
@@ -95,12 +96,9 @@ Commençons par générer les portefeuilles aléatoires et tracer la frontière 
 
 Chaque point représente un portefeuille, avec la couleur indiquant le ratio de Sharpe, une mesure du rendement ajusté au risque. Les portefeuilles situés sur le bord gauche de la frontière (plus près de l'axe des y) offrent les rendements attendus les plus élevés pour un niveau de volatilité donné, ce qui représente des portefeuilles optimaux. Le dégradé montre que les portefeuilles avec des ratios de Sharpe plus élevés (bleu plus foncé) offrent de meilleurs rendements ajustés au risque.
 
-Voici comment identifier le portefeuille avec le ratio de Sharpe maximal :
+Le portefeuille avec le ratio de Sharpe maximal présente les caractéristiques suivantes :
 
 ![Capture d’écran 2024-09-08 182745](https://github.com/user-attachments/assets/93e1858c-bcce-465f-b2dd-d3896e96b4f5)
-
-
-Le portefeuille avec le ratio de Sharpe maximal présente les caractéristiques suivantes :
 
   Rendement attendu : ~27.45 %
   
