@@ -75,9 +75,11 @@ En utilisant la Théorie Moderne du Portefeuille, nous pouvons construire un por
 
   *Commençons par calculer les rendements attendus et la volatilité pour chaque action :
 
-![Capture d’écran 2024-09-07 145556](https://github.com/user-attachments/assets/0f096baa-f841-46fe-a196-e700f9e89872)
+![Capture d’écran 2024-09-08 182125](https://github.com/user-attachments/assets/6ccbdea9-463e-4eb0-9fd9-e56e4980b0e3)
 
-RELIANCE a le rendement attendu le plus élevé (29,73 %) et une volatilité modérée (21,47 %), ce qui indique un investissement potentiellement très rémunérateur avec un risque relativement élevé. INFY et TCS ont également des rendements attendus élevés (respectivement 21,38 % et 22,09 %) avec une volatilité modérée (23,23 % et 19,69 %). HDFCBANK affiche le rendement attendu le plus faible (1,37 %) et une volatilité modérée (20,69 %), ce qui en fait l'option la moins attractive en termes de rendement ajusté au risque.
+
+
+INFY a le rendement attendu le plus élevé (31.76 %) et une volatilité modérée (22.28 %), ce qui indique un investissement potentiellement très rémunérateur avec un risque relativement élevé. RELIANCE et TCS ont également des rendements attendus élevés (respectivement 20.30 % et 29.74 %) avec une volatilité modérée (21.46 % et 20.77 %). HDFCBANK affiche le rendement attendu le plus faible (4.11 %) et une volatilité modérée (21,69 %), ce qui en fait l'option la moins attractive en termes de rendement ajusté au risque.
 
 Ensuite, nous allons :
 
