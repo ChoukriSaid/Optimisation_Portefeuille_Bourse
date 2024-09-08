@@ -55,7 +55,7 @@ Pour HDFCBANK et INFY, les prix diminuent initialement mais montrent ensuite des
 
 Voyons maintenant la distribution des rendements quotidiens de ces actions :
 
-![Capture d’écran 2024-09-07 145336](https://github.com/user-attachments/assets/1e7ccff6-63d0-455a-adce-f78161e99cec)
+
 
 Les distributions sont approximativement normales, centrées autour de zéro, ce qui indique que la plupart des rendements quotidiens sont proches du rendement moyen. Cependant, il y a des extrémités des deux côtés, reflétant des gains ou des pertes significatifs occasionnels. INFY et RELIANCE semblent avoir des distributions légèrement plus larges, ce qui suggère une plus grande volatilité comparée à HDFCBANK et TCS.
 
@@ -91,36 +91,39 @@ Ensuite, nous allons :
 
 Commençons par générer les portefeuilles aléatoires et tracer la frontière efficiente :
 
-![Capture d’écran 2024-09-07 145654](https://github.com/user-attachments/assets/dc2b7e2f-bbc9-4374-9156-bf174242abe4)
+![Capture d’écran 2024-09-08 182431](https://github.com/user-attachments/assets/6be7697e-2b93-4882-a695-d7d18bf373fb)
 
 Chaque point représente un portefeuille, avec la couleur indiquant le ratio de Sharpe, une mesure du rendement ajusté au risque. Les portefeuilles situés sur le bord gauche de la frontière (plus près de l'axe des y) offrent les rendements attendus les plus élevés pour un niveau de volatilité donné, ce qui représente des portefeuilles optimaux. Le dégradé montre que les portefeuilles avec des ratios de Sharpe plus élevés (bleu plus foncé) offrent de meilleurs rendements ajustés au risque.
 
 Voici comment identifier le portefeuille avec le ratio de Sharpe maximal :
 
-![Capture d’écran 2024-09-07 145810](https://github.com/user-attachments/assets/3a3d2d11-f7d2-4d1e-becd-cc6d97ce293f)
+![Capture d’écran 2024-09-08 182745](https://github.com/user-attachments/assets/93e1858c-bcce-465f-b2dd-d3896e96b4f5)
+
 
 Le portefeuille avec le ratio de Sharpe maximal présente les caractéristiques suivantes :
 
-  Rendement attendu : ~29,57 %
+  Rendement attendu : ~27.45 %
   
-  Volatilité : ~16,27 %
+  Volatilité : ~16.48 %
   
-  Ratio de Sharpe : ~1,81
+  Ratio de Sharpe : ~1,66
   
 Passons maintenant à l'identification des pondérations des actions dans le portefeuille qui génèrent le ratio de Sharpe maximal :
 
-![Capture d’écran 2024-09-07 145858](https://github.com/user-attachments/assets/83c25ea5-b991-4187-b421-4d03b02412e0)
+![Capture d’écran 2024-09-08 182921](https://github.com/user-attachments/assets/22a586e5-178c-4345-a60b-d788408a2141)
+
 
 Le résultat montre un portefeuille diversifié avec les allocations suivantes :
 
-  HDFCBANK : 49.40 %
+  HDFCBANK : 28.15 %
   
-  INFY : 10.61 %
+  INFY : 24.56 %
   
-  RELIANCE : 39.97 %
+  RELIANCE : 26.89 %
   
-  TCS : 40,53 %
-TCS a l'allocation la plus élevée, ce qui indique sa contribution significative à la performance du portefeuille, tandis qu'INFY a l'allocation la plus faible. Cette allocation équilibrée vise à maximiser les rendements tout en minimisant le risque, en tirant parti des performances individuelles des actions et de leurs corrélations.
+  TCS : 20.38 %
+  
+Cette allocation équilibrée vise à maximiser les rendements tout en minimisant le risque, en tirant parti des performances individuelles des actions et de leurs corrélations.
 
 ## Conclusion
 Ainsi, c'est ainsi que fonctionne l'optimisation d'un portefeuille boursier. L'optimisation d'un portefeuille boursier implique l'analyse des tendances des prix, le calcul des rendements et des volatilités attendus, ainsi que la détermination des corrélations entre différentes actions pour obtenir une diversification.
